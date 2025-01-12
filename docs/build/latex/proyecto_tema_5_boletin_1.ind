@@ -1,0 +1,30 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter D
+  \item \spxentry{division()}\spxextra{en el módulo src.operaciones}, \hyperpage{8}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{module}
+    \subitem \spxentry{src.operaciones}, \hyperpage{8}
+  \item \spxentry{multiplicacion()}\spxextra{en el módulo src.operaciones}, \hyperpage{8}
+
+  \indexspace
+  \bigletter O
+  \item \spxentry{operaciones\_basicas()}\spxextra{en el módulo src.operaciones}, \hyperpage{9}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{resta()}\spxextra{en el módulo src.operaciones}, \hyperpage{9}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{src.operaciones}
+    \subitem \spxentry{module}, \hyperpage{8}
+  \item \spxentry{suma()}\spxextra{en el módulo src.operaciones}, \hyperpage{9}
+
+\end{sphinxtheindex}

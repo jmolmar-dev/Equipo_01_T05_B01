@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.8 Extensiones de Sintaxis en MyST &mdash; documentación de Proyecto Tema 5 Equipo 01 - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3.9 Roles y Directivas en MyST" href="roles.html" />
+    <link rel="prev" title="3.7 Organización del Contenido en MyST" href="organizacion_contenido.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Proyecto Tema 5 Equipo 01
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Índice del Proyecto:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_configuracion_inicial/index.html">1. Configuración Inicial del Proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_comandos/index.html">2.Comandos Utilizados de forma detallada en el proyecto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">3. Guia de Uso Myst</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tipografia.html">3.1 Tipografia MYST:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advertencias.html">3.2 Admonitions en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagenes_figuras.html">3.3 Imágenes y Figuras en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tablas.html">3.4 Tablas en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_api.html">3.5 Códigos Fuente y APIs en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html">3.6 Cross-References en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organizacion_contenido.html">3.7 Organización del Contenido en MyST</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.8 Extensiones de Sintaxis en MyST</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#extensiones-opcionales">3.8.1 Extensiones Opcionales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#matematicas-con-dollarmath">3.8.2 Matemáticas con <strong>dollarmath</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#listas-de-tareas-con-tasklist">3.8.3 Listas de Tareas con <strong>tasklist</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#listas-de-campos-con-fieldlist">3.8.4 Listas de Campos con <strong>fieldlist</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="roles.html">3.9 Roles y Directivas en MyST</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Proyecto Tema 5 Equipo 01</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">3. Guia de Uso Myst</a></li>
+      <li class="breadcrumb-item active">3.8 Extensiones de Sintaxis en MyST</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/3_guia_myst/extensiones.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="extensiones-de-sintaxis-en-myst">
+<h1>3.8 Extensiones de Sintaxis en MyST<a class="headerlink" href="#extensiones-de-sintaxis-en-myst" title="Link to this heading"></a></h1>
+<section id="extensiones-opcionales">
+<h2>3.8.1 Extensiones Opcionales<a class="headerlink" href="#extensiones-opcionales" title="Link to this heading"></a></h2>
+<p>El parser de MyST incluye varias extensiones opcionales que permiten agregar características avanzadas al contenido. Estas extensiones se pueden habilitar en la configuración de Sphinx mediante la clave <code class="docutils literal notranslate"><span class="pre">myst_enable_extensions</span></code>.</p>
+<p>Ejemplo de configuración en <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myst_enable_extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;dollarmath&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tasklist&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;fieldlist&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>A continuación, se explican tres extensiones con ejemplos:</p>
+</section>
+<hr class="docutils" />
+<section id="matematicas-con-dollarmath">
+<h2>3.8.2 Matemáticas con <strong>dollarmath</strong><a class="headerlink" href="#matematicas-con-dollarmath" title="Link to this heading"></a></h2>
+<p>Permite escribir expresiones matemáticas en línea usando <code class="docutils literal notranslate"><span class="pre">$</span></code> para ecuaciones simples o <code class="docutils literal notranslate"><span class="pre">$$</span></code> para ecuaciones en bloques.</p>
+<div class="admonition-ejemplo-de-matematicas-con-dollarmath admonition">
+<p class="admonition-title">Ejemplo de Matemáticas con Dollarmath</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>El área de un círculo es $A = \pi r^2$.
+
+$$
+E = mc^2
+$$
+</pre></div>
+</div>
+</div>
+<p>Se renderizará como:</p>
+<ul class="simple">
+<li><p>En línea: ( A = \pi r^2 )</p></li>
+<li><p>Bloque:<br />
+[
+E = mc^2
+]</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="listas-de-tareas-con-tasklist">
+<h2>3.8.3 Listas de Tareas con <strong>tasklist</strong><a class="headerlink" href="#listas-de-tareas-con-tasklist" title="Link to this heading"></a></h2>
+<p>Esta extensión permite agregar listas de tareas con casillas marcables en Markdown.</p>
+<div class="admonition-ejemplo-de-lista-de-tareas admonition">
+<p class="admonition-title">Ejemplo de Lista de Tareas</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">- [ ]</span> Tarea pendiente
+<span class="k">- [x]</span> Tarea completada
+<span class="k">- [ ]</span> Otra tarea
+</pre></div>
+</div>
+</div>
+<p>Se renderizará como:</p>
+<ul class="simple">
+<li><p>[ ] Tarea pendiente</p></li>
+<li><p>[x] Tarea completada</p></li>
+<li><p>[ ] Otra tarea</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="listas-de-campos-con-fieldlist">
+<h2>3.8.4 Listas de Campos con <strong>fieldlist</strong><a class="headerlink" href="#listas-de-campos-con-fieldlist" title="Link to this heading"></a></h2>
+<p>Esta extensión se utiliza para estructurar definiciones con pares clave-valor en formato limpio.</p>
+<div class="admonition-ejemplo-de-lista-de-campos admonition">
+<p class="admonition-title">Ejemplo de Lista de Campos</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:autor: John Doe
+:versión: 1.0
+:fecha: 12-01-2025
+</pre></div>
+</div>
+</div>
+<p>Renderiza el contenido como una tabla de definiciones:</p>
+<ul class="simple">
+<li><p><strong>autor</strong>: John Doe</p></li>
+<li><p><strong>versión</strong>: 1.0</p></li>
+<li><p><strong>fecha</strong>: 12-01-2025</p></li>
+</ul>
+<hr class="docutils" />
+<p>Habilitar estas extensiones puede enriquecer la presentación y funcionalidad del contenido de tu guía.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="organizacion_contenido.html" class="btn btn-neutral float-left" title="3.7 Organización del Contenido en MyST" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="roles.html" class="btn btn-neutral float-right" title="3.9 Roles y Directivas en MyST" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Juan Molero Marin.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

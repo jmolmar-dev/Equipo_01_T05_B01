@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.4 Tablas en MyST &mdash; documentación de Proyecto Tema 5 Equipo 01 - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3.5 Códigos Fuente y APIs en MyST" href="code_api.html" />
+    <link rel="prev" title="3.3 Imágenes y Figuras en MyST" href="imagenes_figuras.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Proyecto Tema 5 Equipo 01
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Índice del Proyecto:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_configuracion_inicial/index.html">1. Configuración Inicial del Proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_comandos/index.html">2.Comandos Utilizados de forma detallada en el proyecto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">3. Guia de Uso Myst</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tipografia.html">3.1 Tipografia MYST:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advertencias.html">3.2 Admonitions en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagenes_figuras.html">3.3 Imágenes y Figuras en MyST</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.4 Tablas en MyST</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tablas-basicas">3.4.1 Tablas Básicas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tablas-mejoradas-con-myst">3.4.2 Tablas Mejoradas con MyST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tablas-con-ancho-personalizado">3.4.3 Tablas con Ancho Personalizado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#combinar-celdas-en-tablas">3.4.4 Combinar Celdas en Tablas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="code_api.html">3.5 Códigos Fuente y APIs en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html">3.6 Cross-References en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organizacion_contenido.html">3.7 Organización del Contenido en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensiones.html">3.8 Extensiones de Sintaxis en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roles.html">3.9 Roles y Directivas en MyST</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Proyecto Tema 5 Equipo 01</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">3. Guia de Uso Myst</a></li>
+      <li class="breadcrumb-item active">3.4 Tablas en MyST</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/3_guia_myst/tablas.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tablas-en-myst">
+<h1>3.4 Tablas en MyST<a class="headerlink" href="#tablas-en-myst" title="Link to this heading"></a></h1>
+<section id="tablas-basicas">
+<h2>3.4.1 Tablas Básicas<a class="headerlink" href="#tablas-basicas" title="Link to this heading"></a></h2>
+<p>Las tablas en MyST se pueden crear usando la sintaxis básica de Markdown.</p>
+<div class="admonition-ejemplo-de-tabla-basica admonition">
+<p class="admonition-title">Ejemplo de Tabla Básica</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Columna 1</p></th>
+<th class="head"><p>Columna 2</p></th>
+<th class="head"><p>Columna 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fila 1</p></td>
+<td><p>Valor 1</p></td>
+<td><p>Valor 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fila 2</p></td>
+<td><p>Valor 3</p></td>
+<td><p>Valor 4</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">Columna</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">Columna</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Columna</span> <span class="mi">3</span> <span class="o">|</span>
+<span class="o">|-----------|-----------|-----------|</span>
+<span class="o">|</span> <span class="n">Fila</span> <span class="mi">1</span>    <span class="o">|</span> <span class="n">Valor</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">Valor</span> <span class="mi">2</span>   <span class="o">|</span>
+<span class="o">|</span> <span class="n">Fila</span> <span class="mi">2</span>    <span class="o">|</span> <span class="n">Valor</span> <span class="mi">3</span>   <span class="o">|</span> <span class="n">Valor</span> <span class="mi">4</span>   <span class="o">|</span>
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tablas-mejoradas-con-myst">
+<h2>3.4.2 Tablas Mejoradas con MyST<a class="headerlink" href="#tablas-mejoradas-con-myst" title="Link to this heading"></a></h2>
+<p>Puedes mejorar tus tablas utilizando directivas de MyST para agregar alineaciones, anchos y estilos avanzados.</p>
+<div class="admonition-ejemplo-de-tabla-mejorada admonition">
+<p class="admonition-title">Ejemplo de Tabla Mejorada</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cabecera 1</p></th>
+<th class="head"><p>Cabecera 2</p></th>
+<th class="head"><p>Cabecera 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fila 1, Col 1</p></td>
+<td><p>Fila 1, Col 2</p></td>
+<td><p>Fila 1, Col 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fila 2, Col 1</p></td>
+<td><p>Fila 2, Col 2</p></td>
+<td><p>Fila 2, Col 3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{list-table}
+---
+header-rows: 1
+---
+* - Cabecera 1
+  - Cabecera 2
+  - Cabecera 3
+* - Fila 1, Col 1
+  - Fila 1, Col 2
+  - Fila 1, Col 3
+* - Fila 2, Col 1
+  - Fila 2, Col 2
+  - Fila 2, Col 3
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tablas-con-ancho-personalizado">
+<h2>3.4.3 Tablas con Ancho Personalizado<a class="headerlink" href="#tablas-con-ancho-personalizado" title="Link to this heading"></a></h2>
+<p>Puedes ajustar el ancho de las columnas para que se adapten mejor al contenido.</p>
+<div class="admonition-ejemplo-de-ancho-personalizado admonition">
+<p class="admonition-title">Ejemplo de Ancho Personalizado</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Columna Estrecha</p></th>
+<th class="head"><p>Columna Mediana</p></th>
+<th class="head"><p>Columna Ancha</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Corto</p></td>
+<td><p>Texto de longitud media</p></td>
+<td><p>Este texto es más largo para demostrar el ancho personalizado</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{list-table}
+---
+header-rows: 1
+widths: 20 30 50
+---
+* - Columna Estrecha
+  - Columna Mediana
+  - Columna Ancha
+* - Corto
+  - Texto de longitud media
+  - Este texto es más largo para demostrar el ancho personalizado
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="combinar-celdas-en-tablas">
+<h2>3.4.4 Combinar Celdas en Tablas<a class="headerlink" href="#combinar-celdas-en-tablas" title="Link to this heading"></a></h2>
+<p>No es posible combinar celdas directamente con la sintaxis de Markdown o MyST, pero puedes usar HTML dentro de MyST si necesitas esta funcionalidad.</p>
+<div class="admonition-ejemplo-de-tabla-con-celdas-combinadas admonition">
+<p class="admonition-title">Ejemplo de Tabla con Celdas Combinadas</p>
+<table>
+  <tr>
+    <th>Cabecera 1</th>
+    <th>Cabecera 2</th>
+    <th>Cabecera 3</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Celda combinada</td>
+    <td>Fila 1, Col 2</td>
+    <td>Fila 1, Col 3</td>
+  </tr>
+  <tr>
+    <td>Fila 2, Col 2</td>
+    <td>Fila 2, Col 3</td>
+  </tr>
+</table></div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{raw} html
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Cabecera 1&lt;/th&gt;
+    &lt;th&gt;Cabecera 2&lt;/th&gt;
+    &lt;th&gt;Cabecera 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;Celda combinada&lt;/td&gt;
+    &lt;td&gt;Fila 1, Col 2&lt;/td&gt;
+    &lt;td&gt;Fila 1, Col 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Fila 2, Col 2&lt;/td&gt;
+    &lt;td&gt;Fila 2, Col 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="imagenes_figuras.html" class="btn btn-neutral float-left" title="3.3 Imágenes y Figuras en MyST" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="code_api.html" class="btn btn-neutral float-right" title="3.5 Códigos Fuente y APIs en MyST" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Juan Molero Marin.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

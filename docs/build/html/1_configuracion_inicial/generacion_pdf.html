@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.9. Generación de PDF a partir de la documentación: &mdash; documentación de Proyecto Tema 5 Equipo 01 - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="1.10 Explicación de la Estructura Final del Proyecto:" href="estructura_final.html" />
+    <link rel="prev" title="1.8. Generación de HTML a partir de la documentación" href="generacion_html.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Proyecto Tema 5 Equipo 01
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Índice del Proyecto:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">1. Configuración Inicial del Proyecto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="entorno.html">1.1 Creación del Entorno Virtual:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libreria.html">1.2 Instalación y Funcionamiento de las Librerías necesarias:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proyecto_inicial_sphynx.html">1.3. Creación inicial del proyecto con Sphinx:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="estructura_inicial.html">1.4 Explicación de la Estructura inicial del proyecto:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="explicacion_confpy.html">1.5. Explicación de conf.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="explicacion_indexmd.html">1.6. Explicacion del archivo index.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ficheros_documentacion.html">1.7. Creación de ficheros de código y generación automática de documentación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generacion_html.html">1.8. Generación de HTML a partir de la documentación</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.9. Generación de PDF a partir de la documentación:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="estructura_final.html">1.10 Explicación de la Estructura Final del Proyecto:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_comandos/index.html">2.Comandos Utilizados de forma detallada en el proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_guia_myst/index.html">3. Guia de Uso Myst</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Proyecto Tema 5 Equipo 01</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">1. Configuración Inicial del Proyecto</a></li>
+      <li class="breadcrumb-item active">1.9. Generación de PDF a partir de la documentación:</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/1_configuracion_inicial/generacion_pdf.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="generacion-de-pdf-a-partir-de-la-documentacion">
+<h1>1.9. Generación de PDF a partir de la documentación:<a class="headerlink" href="#generacion-de-pdf-a-partir-de-la-documentacion" title="Link to this heading"></a></h1>
+<p>Para la generación de archivos PDF, en nuestro caso hemos escogido el sistema que emplea la tipografía LaTeX, mediante la cual gracias a un intérprete vamos a poder generar archivos en formato <strong>.tex</strong>, que posteriormente se compilarán en documentos <strong>PDF</strong> con una apareriencia profesional. Para ello, el primer paso será tener una distribución de TeX propiamente instalada dentro del equipo donde se quiera realizar esta tarea. Es por eso que en nuestro caso hemos decidido instalar <strong>MiKTeX</strong>. El proceso de instalación será el siguiente:</p>
+<p><strong>1. Buscamos MiKTeX en nuestro navegador e indicamos en que parte del sistema deseamos instalarlo</strong></p>
+<hr class="docutils" />
+<p><strong>2. Al instalarlo, abriremos posteriormente su consola para actualizarlo y agregaremos los paquetes de latexpdf necesarios para generar nuestros documentos</strong></p>
+<hr class="docutils" />
+<p><strong>3. Finalmente, indicaremos al Sistema Operativo mediante la modificación de la Variable del Sistema Path la ruta de instalación de MiKTeX, con la finalidad de que se reconozca posteriormente el comando que tenemos que emplear</strong></p>
+<hr class="docutils" />
+<p>Tras realizar todos estos pasos, es momento de dirigirnos a nuestro proyecto y comenzar a generar la documentación. Para eso ejecutaremos el siguiente comando:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>\<span class="n">make</span><span class="o">.</span><span class="n">bat</span> <span class="n">clean</span><span class="p">;</span> <span class="o">.</span>\<span class="n">make</span><span class="o">.</span><span class="n">bat</span> <span class="n">latexpdf</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Comando</strong></p></th>
+<th class="head"><p><strong>Explicación</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>.\make.bat clean</strong></p></td>
+<td><p>Ejecuta el script <code class="docutils literal notranslate"><span class="pre">make.bat</span></code> con la opción <code class="docutils literal notranslate"><span class="pre">clean</span></code>, lo que significa que limpia cualquier archivo o compilación previa en el proyecto, eliminando archivos generados anteriormente.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>.\make.bat latexpdf</strong></p></td>
+<td><p>Ejecuta el script <code class="docutils literal notranslate"><span class="pre">make.bat</span></code> con la opción <code class="docutils literal notranslate"><span class="pre">latexpdf</span></code>, que compila la documentación en formato LaTeX y la convierte en un archivo PDF.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Al ejecutar el comando, la carpeta build se nos reestructurará y se nos generará el archivo <strong>.pdf</strong> correspondiente dentro del subdirectorio <strong>/latex</strong>.</p>
+<hr class="docutils" />
+<p><strong>IMPORTANTE</strong></p>
+<ul class="simple">
+<li><p>Para que el formato <strong>PDF</strong> salga con el formato deseado y con el fin de evitar errores, como duplicación de páginas en blanco o de índices en la numeración, se ha tenido que agregar la siguiente configuración dentro del archivo <strong>conf.py</strong>:</p></li>
+</ul>
+<p><img alt="mi_Imagen" src="../_images/nueva_configuracion.png" /></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="generacion_html.html" class="btn btn-neutral float-left" title="1.8. Generación de HTML a partir de la documentación" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="estructura_final.html" class="btn btn-neutral float-right" title="1.10 Explicación de la Estructura Final del Proyecto:" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Juan Molero Marin.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.5 Códigos Fuente y APIs en MyST &mdash; documentación de Proyecto Tema 5 Equipo 01 - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3.6 Cross-References en MyST" href="cross_references.html" />
+    <link rel="prev" title="3.4 Tablas en MyST" href="tablas.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Proyecto Tema 5 Equipo 01
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Índice del Proyecto:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_configuracion_inicial/index.html">1. Configuración Inicial del Proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_comandos/index.html">2.Comandos Utilizados de forma detallada en el proyecto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">3. Guia de Uso Myst</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tipografia.html">3.1 Tipografia MYST:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advertencias.html">3.2 Admonitions en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagenes_figuras.html">3.3 Imágenes y Figuras en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tablas.html">3.4 Tablas en MyST</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.5 Códigos Fuente y APIs en MyST</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bloques-de-codigo">3.5.1 Bloques de Código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bloques-de-codigo-con-directivas">3.5.2 Bloques de Código con Directivas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#incrustar-apis-en-documentos">3.5.3 Incrustar APIs en Documentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resaltar-fragmentos-de-codigo">3.5.4 Resaltar Fragmentos de Código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjuntar-archivos-de-codigo">3.5.5 Adjuntar Archivos de Código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notas-sobre-la-configuracion">3.5.6 Notas sobre la Configuración</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html">3.6 Cross-References en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organizacion_contenido.html">3.7 Organización del Contenido en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensiones.html">3.8 Extensiones de Sintaxis en MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roles.html">3.9 Roles y Directivas en MyST</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Proyecto Tema 5 Equipo 01</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">3. Guia de Uso Myst</a></li>
+      <li class="breadcrumb-item active">3.5 Códigos Fuente y APIs en MyST</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/3_guia_myst/code_api.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="codigos-fuente-y-apis-en-myst">
+<h1>3.5 Códigos Fuente y APIs en MyST<a class="headerlink" href="#codigos-fuente-y-apis-en-myst" title="Link to this heading"></a></h1>
+<section id="bloques-de-codigo">
+<h2>3.5.1 Bloques de Código<a class="headerlink" href="#bloques-de-codigo" title="Link to this heading"></a></h2>
+<p>Para mostrar bloques de código en MyST, puedes usar la sintaxis estándar de Markdown con tres acentos graves ````` o usar directivas enriquecidas para mayor control.</p>
+<div class="admonition-ejemplo-de-bloque-de-codigo-basico admonition">
+<p class="admonition-title">Ejemplo de Bloque de Código Básico</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Este es un bloque de código básico en Python</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola, mundo!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```python
+# Este es un bloque de código básico en Python
+print(&quot;Hola, mundo!&quot;)
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="bloques-de-codigo-con-directivas">
+<h2>3.5.2 Bloques de Código con Directivas<a class="headerlink" href="#bloques-de-codigo-con-directivas" title="Link to this heading"></a></h2>
+<p>Las directivas de MyST permiten personalizar aún más los bloques de código, añadiendo títulos, líneas resaltadas, etc.</p>
+<div class="admonition-ejemplo-de-bloque-de-codigo-con-directivas admonition">
+<p class="admonition-title">Ejemplo de Bloque de Código con Directivas</p>
+<div class="highlight-python notranslate" id="ejemplo-de-codigo-python"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Código Python con configuración personalizada</span>
+<span class="hll"><span class="linenos">2</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span class="linenos">3</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El valor de x es </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-block} python
+---
+name: Ejemplo de Código Python
+linenos: true
+emphasize-lines: 2
+---
+# Código Python con configuración personalizada
+x = 10
+print(f&quot;El valor de x es {x}&quot;)
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="incrustar-apis-en-documentos">
+<h2>3.5.3 Incrustar APIs en Documentos<a class="headerlink" href="#incrustar-apis-en-documentos" title="Link to this heading"></a></h2>
+<p>Puedes incluir documentaciones de APIs directamente en tus documentos usando la directiva <code class="docutils literal notranslate"><span class="pre">automodule</span></code> o <code class="docutils literal notranslate"><span class="pre">autoclass</span></code> de Sphinx.</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{automodule} mi_modulo.ejemplo
+---
+members: true
+undoc-members: true
+show-inheritance: true
+---
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resaltar-fragmentos-de-codigo">
+<h2>3.5.4 Resaltar Fragmentos de Código<a class="headerlink" href="#resaltar-fragmentos-de-codigo" title="Link to this heading"></a></h2>
+<p>Puedes resaltar fragmentos específicos dentro del texto utilizando bloques en línea.</p>
+<div class="admonition-ejemplo-de-codigo-en-linea admonition">
+<p class="admonition-title">Ejemplo de Código en Línea</p>
+<p>Este es un ejemplo de <code class="docutils literal notranslate"><span class="pre">código</span> <span class="pre">en</span> <span class="pre">línea</span></code> dentro de un párrafo.</p>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Este es un ejemplo de `código en línea` dentro de un párrafo.
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="adjuntar-archivos-de-codigo">
+<h2>3.5.5 Adjuntar Archivos de Código<a class="headerlink" href="#adjuntar-archivos-de-codigo" title="Link to this heading"></a></h2>
+<p>Para incluir archivos de código externos en tu documentación, utiliza la directiva <code class="docutils literal notranslate"><span class="pre">literalinclude</span></code>.</p>
+<div class="admonition-ejemplo-de-inclusion-de-archivo admonition">
+<p class="admonition-title">Ejemplo de Inclusión de Archivo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">def</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="linenos"> 2</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Suma dos números.</span>
+<span class="hll"><span class="linenos"> 3</span>
+</span><span class="linenos"> 4</span><span class="sd">    Args:</span>
+<span class="linenos"> 5</span><span class="sd">        a (float): Primer número.</span>
+<span class="linenos"> 6</span><span class="sd">        b (float): Segundo número.</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="sd">    Returns:</span>
+<span class="linenos"> 9</span><span class="sd">        float: Resultado de la suma.</span>
+<span class="linenos">10</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">11</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="k">def</span><span class="w"> </span><span class="nf">resta</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="linenos">15</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Resta dos números.</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="sd">    Args:</span>
+<span class="linenos">18</span><span class="sd">        a (float): Primer número.</span>
+<span class="linenos">19</span><span class="sd">        b (float): Segundo número.</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="sd">    Returns:</span>
+<span class="linenos">22</span><span class="sd">        float: Resultado de la resta.</span>
+<span class="linenos">23</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">24</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="k">def</span><span class="w"> </span><span class="nf">multiplicacion</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="linenos">28</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Multiplica dos números.</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="sd">    Args:</span>
+<span class="linenos">31</span><span class="sd">        a (float): Primer número.</span>
+<span class="linenos">32</span><span class="sd">        b (float): Segundo número.</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="sd">    Returns:</span>
+<span class="linenos">35</span><span class="sd">        float: Resultado de la multiplicación.</span>
+<span class="linenos">36</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">37</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="k">def</span><span class="w"> </span><span class="nf">division</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="linenos">41</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Divide dos números.</span>
+<span class="linenos">42</span>
+<span class="linenos">43</span><span class="sd">    Args:</span>
+<span class="linenos">44</span><span class="sd">        a (float): Dividendo.</span>
+<span class="linenos">45</span><span class="sd">        b (float): Divisor. No puede ser cero.</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="sd">    Returns:</span>
+<span class="linenos">48</span><span class="sd">        float: Resultado de la división.</span>
+<span class="linenos">49</span>
+<span class="linenos">50</span><span class="sd">    Raises:</span>
+<span class="linenos">51</span><span class="sd">        ValueError: Si el divisor es cero.</span>
+<span class="linenos">52</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">53</span>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">54</span>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;El divisor no puede ser cero.&quot;</span><span class="p">)</span>
+<span class="linenos">55</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<span class="linenos">56</span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="k">def</span><span class="w"> </span><span class="nf">operaciones_basicas</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="linenos">59</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Realiza todas las operaciones básicas entre dos números.</span>
+<span class="linenos">60</span>
+<span class="linenos">61</span><span class="sd">    Args:</span>
+<span class="linenos">62</span><span class="sd">        a (float): Primer número.</span>
+<span class="linenos">63</span><span class="sd">        b (float): Segundo número.</span>
+<span class="linenos">64</span>
+<span class="linenos">65</span><span class="sd">    Returns:</span>
+<span class="linenos">66</span><span class="sd">        dict: Diccionario con los resultados de suma, resta, multiplicación y división.</span>
+<span class="linenos">67</span>
+<span class="linenos">68</span><span class="sd">    Raises:</span>
+<span class="linenos">69</span><span class="sd">        ValueError: Si el divisor es cero al intentar dividir.</span>
+<span class="linenos">70</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">71</span>    <span class="k">try</span><span class="p">:</span>
+<span class="linenos">72</span>        <span class="k">return</span> <span class="p">{</span>
+<span class="linenos">73</span>            <span class="s2">&quot;suma&quot;</span><span class="p">:</span> <span class="n">suma</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span>
+<span class="linenos">74</span>            <span class="s2">&quot;resta&quot;</span><span class="p">:</span> <span class="n">resta</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span>
+<span class="linenos">75</span>            <span class="s2">&quot;multiplicacion&quot;</span><span class="p">:</span> <span class="n">multiplicacion</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span>
+<span class="linenos">76</span>            <span class="s2">&quot;division&quot;</span><span class="p">:</span> <span class="n">division</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span>
+<span class="linenos">77</span>        <span class="p">}</span>
+<span class="linenos">78</span>    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="linenos">79</span>        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+</pre></div>
+</div>
+</div>
+<p>Esto se logra con:</p>
+<div class="admonition-markdown admonition">
+<p class="admonition-title">Markdown</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{literalinclude} ../../../src/operaciones.py
+---
+language: python
+linenos: true
+emphasize-lines: 3
+---
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="notas-sobre-la-configuracion">
+<h2>3.5.6 Notas sobre la Configuración<a class="headerlink" href="#notas-sobre-la-configuracion" title="Link to this heading"></a></h2>
+<p>Al usar directivas como <code class="docutils literal notranslate"><span class="pre">automodule</span></code> o <code class="docutils literal notranslate"><span class="pre">literalinclude</span></code>, asegúrate de que las rutas de los archivos sean correctas y de que la configuración de Sphinx permita el uso de estas directivas. Esto puede requerir ajustes en <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> como:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="tablas.html" class="btn btn-neutral float-left" title="3.4 Tablas en MyST" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="cross_references.html" class="btn btn-neutral float-right" title="3.6 Cross-References en MyST" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Juan Molero Marin.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

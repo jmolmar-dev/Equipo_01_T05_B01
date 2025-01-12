@@ -52,7 +52,7 @@ latex_elements = {
 
 
 latex_documents = [
-    ('index', 'proyecto_tema_5_boletin_1.tex', 'Proyecto Tema 5 Boletín 1', 'Autor', 'manual'),
+    ('index', 'proyecto_tema_5_boletin_1.tex', 'Proyecto Tema 5 Boletín 1', 'Juan Molero Marín, Julio Rodriguez Lopez, Julian Martinez Lorda', 'manual'),
 ]
 
 
